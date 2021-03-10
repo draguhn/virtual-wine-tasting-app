@@ -1,0 +1,745 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+/* STYLE FOR ALL BUTTONS ON THE WEBSITE */
+button{
+  background:#2c2c2c;
+  margin-top: 0.5em;
+  color: whitesmoke;
+  border:none;
+  position:relative;
+  height:50px;
+  font-size:1.3em;
+  padding:0 1.5em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+
+button:hover{
+  background:whitesmoke;
+  color:#2c2c2c;
+}
+
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #2c2c2c;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+/* OVERALL GRID STRUCTURE */
+.grid__container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 9fr;
+  grid-template-areas: 
+      'nav'
+      'main';
+}
+
+.main {
+  background-color: whitesmoke;
+  grid-area: main;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  width: 100vw;
+}
+
+.login__container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ALL NAVBAR STUFF - FANCY UNDERLINE ANIMATION */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgb(27, 27, 27);
+  text-decoration: none;
+  font-size: 1.5em;
+  padding: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.underline__navbar { 
+  position: relative; 
+}
+
+.link__navbar__header {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  border: solid 2px;
+  padding: 10px;
+  position: relative;
+  transition: ease-in-out 0.5s;
+}
+
+.link__navbar__header:hover {
+  background-color: #fff;;
+  color: rgb(27, 27, 27);
+  transition: ease-in-out 0.5s;
+}
+
+.link__navbar {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  position: relative;
+  top: 0.5em;
+}
+
+.link__navbar:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.link__navbar:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+/* LOGIN AND REGISTRATION */
+.centered__container__login {
+  position: relative;
+  width: 40vw;
+  height: 60vh;
+  box-shadow: 0 0 10px -1px #3333;
+  border: solid ;
+}
+
+.login__headline {
+  font-size: 2em;
+  position: absolute;
+  right: 2em;
+  margin-top: -1.1em;
+  background-color: white;
+  padding-left: 0.4em;
+  padding-right: 0.6em;
+}
+
+.login__form {
+  margin-top: 4em;
+}
+
+.input__login {
+  width: 45%;
+  border: solid 1.5px;
+  padding: 1em;
+  font-size: 1.2em;
+  font-weight: bolder;
+  margin: 0.8em;
+  outline: none;
+  letter-spacing: 1px;
+}
+
+.go__to__register {
+  position: absolute;
+  font-size: 1.3em;
+  bottom: 0.3em;
+  right: 0.3em;
+  display: flex;
+  flex-direction: row;
+}
+
+.go__to__register__btn {
+  color: blue;
+  cursor: pointer;
+  margin-left: 3px;
+}
+
+.go__to__register__btn:hover {
+  text-decoration: underline;
+}
+
+.login__btn {
+  margin-top: 1em;
+  width: 7em;
+}
+
+.successfully__registred {
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 40vw;
+  min-height: 60vh;
+  box-shadow: 0 0 10px -1px #3333;
+  border: solid;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+}
+
+/* START WINE TASTING */
+.centered__container__start__tasting {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 50vw;
+  min-height: 70vh;
+  box-shadow: 0 0 10px -1px #3333;
+  border: solid;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.start__tasting__input {
+  margin: 1em;
+  width: 40%;
+  border: solid 1.5px;
+  padding: 1em;
+  font-size: 1.2em;
+  font-weight: bolder;
+  margin-bottom: 0.8em;
+  outline: none;
+}
+
+select {
+  margin: 0.8em;
+  width: 30%;
+  border: solid 1.5px;
+  padding: 1em;
+  font-size: 1.1em;
+  font-weight: bolder;
+  margin-bottom: 0.8em;
+  outline: none;
+}
+
+.start__tasting__btn {
+  width: 30%;
+  height: 3em;
+  font-size: 1.3em;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-top: 1.3em;
+}
+
+/* RATING PROFILE OF WINE */
+.centered__container__profile {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 60vw;
+  min-height: 60vh;
+  box-shadow: 0 0 10px -1px #3333;
+  border: solid;
+}
+
+.rating__explanation__img {
+  position: relative;
+  left: 9em;
+}
+
+.rating__explanation {
+  position: relative;
+  left: 9em;
+  bottom: 1em;
+}
+
+.star__rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* BOX HEADLINES SHALL OVERLAPP WITH THE BORDER */
+.rating__box__headline {
+  font-size: 2.5em;
+  position: absolute;
+  right: 2em;
+  margin-top: -0.8em;
+  background-color: whitesmoke;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+}
+
+.rating__box__profile {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile__tasting__description__text {
+  font-size: 1.5em;
+  margin-left: 4em;
+  margin-right: 4em;
+  text-align: justify;
+  width: 60vw;
+}
+
+.style__rating {
+  margin-top: 1em;
+}
+
+/* TIME DELAY FOR SHOWING DETAILS OF THE PROFILE TEXT SECTION */
+details, summary {
+  outline: 0;
+  position: relative;
+  margin: 1em;
+  right: 0em;
+}
+
+details[open] summary ~ * {
+  animation: sweep 1s ease-in-out;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0; margin-left: 0px}
+  100%  {opacity: 1; margin-left: 0px}
+}
+
+img {
+  position: absolute;
+  right: 1em;
+  bottom: 1em;
+  width: 16.5em;
+  height: 13em;
+}
+
+.hidden__image {
+  position: absolute;
+  right: 1em;
+  bottom: 1em;
+  width: 16.5em;
+  height: 13em;
+  visibility:hidden;
+}
+
+/* DOMINANT FLAVORS */
+.centered__container__dominant__flavors {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 60vw;
+  min-height: 50vh;
+  box-shadow: 0 0 10px -1px #3333;
+  border: solid;
+}
+
+.dominant__flavor__headline {
+  font-size: 2em;
+  position: absolute;
+  right: 3em;
+  margin-top: -1.2em;
+  background-color: whitesmoke;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
+.dominant__flavors__container {
+  display: flex;
+  justify-content: center;
+  padding-top: 15%;
+}
+
+.dominant__flavors__box {
+  padding: 1.2em;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 0.3em;
+  border: solid 1.5px;
+  width: 7em;
+  text-align: center;
+  background-color: rgb(241, 241, 241);
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+
+.dominant__flavors__box__toggled {
+  padding: 1.2em;
+  font-size: 1.2em;
+  font-weight: 700; 
+  margin: 0.3em;
+  border: solid 1.5px;
+  width: 7em;
+  text-align: center;
+  background-color: rgb(113, 177, 133);
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+
+.dominant__flavor__btn {
+  position: absolute;
+  right: 1.5em;
+  bottom: 1.5em;
+}
+
+/* POSSIBLE FLAVORS */
+.centered__container__possible__flavors {
+  position: fixed;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 80vw;
+  min-height: 65vh;
+  box-shadow: 0 0 10px -1px #3333;
+  border: solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.possible__flavor__headline {
+  font-size: 2em;
+  position: absolute;
+  right: 3em;
+  margin-top: -1.8em;
+  background-color: whitesmoke;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
+.possible__flavors {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 3em;
+}
+
+.flavor__box {
+  font-size: 1.1em;
+  padding: 1em;
+  margin: 0.3em;
+  border: solid 1.5px;
+  width: 8em;
+  text-align: center;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+
+.toggled__flavor__box {
+  background-color: rgb(113, 177, 133);
+  transition: ease-in-out 0.3s;
+}
+
+.possible__flavors__button {
+  position: absolute;
+  right: 1.5em;
+  bottom: 1.5em;
+}
+
+h6 {
+  font-size: 0.6em;
+}
+
+.fruit {
+  color: rgb(228, 201, 50);
+}
+
+.dry__fruit {
+  color: rgb(202, 36, 6);
+}
+
+.floral {
+  color: rgb(240, 114, 229);
+}
+
+.herbal {
+  color: rgb(91, 202, 106);
+}
+
+.spice {
+  color: rgb(248, 110, 18);
+}
+
+.earth {
+  color: rgb(145, 72, 13);
+}
+
+.other {
+  color: rgb(110, 110, 110);
+}
+
+/* FINAL OVERALL RATING */
+.centered__container__overallrating {
+  position: fixed;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 70vw;
+  min-height: 55vh;
+  box-shadow: 0 0 10px -1px #3333;
+  border: solid;
+}
+
+.rating__box__headline__subheadline {
+  text-align: center;
+  padding: 2em;
+}
+
+.rating__box {
+  padding: 2em;
+  text-align: center;
+}
+
+.overall__text {
+  font-size: 1.1em;
+  margin: 2em;
+  margin-left: 4em;
+  margin-right: 4em;
+  text-align: justify;
+}
+
+.add__wine__button{
+  position: absolute;
+  right: 50vh;
+  bottom: 2em;
+}
+
+/* Show all wines button */
+.show__all__wines {
+  position: absolute;
+  right: 45vh;
+  bottom: 1.5em;
+}
+
+
+/* WINE CARDS & WINE LIST*/
+.wine__card__container {
+  margin: 3em;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  overflow-y: scroll;
+}
+
+.wine__card {
+  border: solid 2px;
+  margin: 1em;
+  width: 15em;
+  height: 28em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bin__delete__symbol {
+  position: relative;
+  width: 1.5em;
+  right: -6em;
+  top: 0em;
+  cursor: pointer;
+}
+
+.bottle__image {
+  transition: opacity .5s, visibility .5s;
+  width: 10em;
+}
+
+.wrapper__wine__card:hover .bottle__image {
+  opacity: 0;
+  transition: opacity .5s, visibility .5s;
+}
+
+.wrapper__wine__card:hover .wine__card__more__information {
+  opacity: 1;
+  transition: opacity .5s, visibility .5s;
+}
+
+.image__wrap__wine__card {
+  position: relative;
+  height: 200px;
+  width: 257px;
+  top: -4em;
+  left: -2em;
+}
+
+.wine__card__more__information {
+  position: absolute;
+  top: -2em;
+  bottom: 0;
+  left: 3em;
+  right: 0;
+  color: black;
+  opacity: 0;
+  transition: opacity .5s, visibility .5s;
+}
+
+.hover__profile__wine__card {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.hover__flavors__wine__card {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.wine__card__headline {
+  margin: 0.2em;
+  position: relative;
+  top: -6em;
+}
+
+.wine__card__winery {
+  margin: 0.5em;
+  font-size: 1.6em;
+  font-weight: 900;
+  text-align: center;
+}
+
+.wine__card__year {
+  margin: 0.5em;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.wine__card__rating{
+  position: relative;
+  top: -4em;
+  left: 4em;
+}
+
+.wine__card__grape {
+  margin: 0.5em;
+  font-size: 1.2em;
+  text-align: center; 
+}
+
+.wine__card__flavors {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.single__flavor {
+  word-spacing:3px;
+}
+
+
+/* USER DATA */
+.centered__container__user {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 40vw;
+  min-height: 60vh;
+  box-shadow: 0 0 10px -1px #3333;
+  border: solid ;
+}
+
+.user__headline {
+  font-size: 2em;
+  position: absolute;
+  right: 2em;
+  margin-top: -1.1em;
+  background-color: whitesmoke;
+  padding-left: 0.4em;
+  padding-right: 0.6em;
+}
+
+.user__data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2em;
+  padding: 4.5em;
+  margin-left: 2em;
+}
+
+.logout__btn {
+  color: blue;
+}
+
+.logout__btn:hover {
+  text-decoration: underline;
+}
+
+/* HOME */
+
+.home__container {
+  /* border: solid; */
+  width: 50em;
+  height: 35em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home__headline {
+  margin-bottom: 1em;
+  font-size: 3em;
+}
+
+.home__img {
+  position: relative;
+  height: 7em;
+}
+
+.home__sub__container {
+  display: flex;
+  flex-direction: row;
+  margin: 1em;
+  /* border: solid; */
+}
+
+.home__txt {
+  /* border: solid; */
+}
+
+.p__home {
+  text-align: justify;
+}
