@@ -1,4 +1,5 @@
 
+![image](https://user-images.githubusercontent.com/54434107/113608019-3ff99680-964a-11eb-9721-98fd3827c389.png)
 
 <img src="./images/header.png" />
 
@@ -17,7 +18,12 @@ Virtual wine tasting is an application that provides a step-by-step instruction 
 ## Installation Guide ⌨️
 
 1. Fork and clone this repo
-2. Run `npm install` in the client folder
-3. Run `npm install` in the server folder
-4. In the server folder, run `node index.js`
-5. In the client folder, run `npm start` and the application will launch in your browser
+2. Install postgres on your computer
+3. Run `npm install` in the client folder
+4. Run `npm install` in the server folder
+5. Create a ".env" file in the server folder. It should contain the following ennvironmental variables: 
+PASSWORD=HereGoesYourPasswordForPostgres //without quotes
+USERNAME=HereGoesYourUsernameForPostgres //without quotes
+DATABASE=HereGoesTheNameOfYourPostgresDatase //without quotes
+6. In the server folder, run `node index.js`
+7. In the client folder, run `npm start` and the application will launch in your browser
