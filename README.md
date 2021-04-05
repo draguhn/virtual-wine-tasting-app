@@ -1,7 +1,7 @@
 
 ![image](https://user-images.githubusercontent.com/54434107/113608019-3ff99680-964a-11eb-9721-98fd3827c389.png)
+![image](https://user-images.githubusercontent.com/54434107/113609054-974c3680-964b-11eb-96d2-6d7287548f91.png)
 
-<img src="./images/header.png" />
 
 # virtual-wine-tasting 🍷
 
