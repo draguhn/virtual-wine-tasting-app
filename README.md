@@ -27,11 +27,12 @@ Virtual wine tasting is an application that provides a step-by-step instruction 
 4. Run `npm install` in the client folder
 5. Run `npm install` in the server folder
 6. Create a ".env" file in the server folder. It should contain the following ennvironmental variables: 
+
 PASSWORD=
 
 USERNAME=
 
 DATABASE=
 
-6. In the server folder, run `node index.js`
-7. In the client folder, run `npm start` and the application will launch in your browser
+7. In the server folder, run `node index.js`
+8. In the client folder, run `npm start` and the application will launch in your browser
