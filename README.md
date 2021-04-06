@@ -1,11 +1,11 @@
 
 ![image](https://user-images.githubusercontent.com/54434107/113608019-3ff99680-964a-11eb-9721-98fd3827c389.png)
 
-<img src="https://user-images.githubusercontent.com/54434107/113732286-c15c3200-96f9-11eb-80f7-e9dc33ecdec5.png" width="50%" height="50%"><img src="https://user-images.githubusercontent.com/54434107/113732949-4f381d00-96fa-11eb-9294-6eaf5b0d6ddf.png" width="50%" height="50%">
-<img src="https://user-images.githubusercontent.com/54434107/113732991-595a1b80-96fa-11eb-9bb1-b088ea9c209b.png" width="50%" height="50%"><img src="https://user-images.githubusercontent.com/54434107/113733231-8e666e00-96fa-11eb-8f91-6905a36adc5d.png" width="50%" height="50%">
-<img src="https://user-images.githubusercontent.com/54434107/113733305-9faf7a80-96fa-11eb-874f-31912dfa86b8.png" width="50%" height="50%"><img src="https://user-images.githubusercontent.com/54434107/113733335-a807b580-96fa-11eb-951b-403f8057e32a.png" width="50%" height="50%">
-<img src="https://user-images.githubusercontent.com/54434107/113733379-b1911d80-96fa-11eb-9bf2-8d5235eeefc8.png" width="50%" height="50%"><img src="https://user-images.githubusercontent.com/54434107/113733413-b9e95880-96fa-11eb-9e87-f68c447988c9.png" width="50%" height="50%">
-<img src="https://user-images.githubusercontent.com/54434107/113733492-cf5e8280-96fa-11eb-9b9c-4c72d7cd5e46.png" width="50%" height="50%">
+<img src="https://user-images.githubusercontent.com/54434107/113732286-c15c3200-96f9-11eb-80f7-e9dc33ecdec5.png" width="49.75%" height="49.75%"> <img src="https://user-images.githubusercontent.com/54434107/113732949-4f381d00-96fa-11eb-9294-6eaf5b0d6ddf.png" width="50%" height="50%">
+<img src="https://user-images.githubusercontent.com/54434107/113732991-595a1b80-96fa-11eb-9bb1-b088ea9c209b.png" width="49.75%" height="49.75%"> <img src="https://user-images.githubusercontent.com/54434107/113733231-8e666e00-96fa-11eb-8f91-6905a36adc5d.png" width="50%" height="50%">
+<img src="https://user-images.githubusercontent.com/54434107/113733305-9faf7a80-96fa-11eb-874f-31912dfa86b8.png" width="49.75%" height="49.75%"> <img src="https://user-images.githubusercontent.com/54434107/113733335-a807b580-96fa-11eb-951b-403f8057e32a.png" width="49.75%" height="49.75%">
+<img src="https://user-images.githubusercontent.com/54434107/113733379-b1911d80-96fa-11eb-9bf2-8d5235eeefc8.png" width="49.75%" height="49.75%"> <img src="https://user-images.githubusercontent.com/54434107/113733413-b9e95880-96fa-11eb-9e87-f68c447988c9.png" width="49.75%" height="49.75%">
+<img src="https://user-images.githubusercontent.com/54434107/113733492-cf5e8280-96fa-11eb-9b9c-4c72d7cd5e46.png" width="49.75%" height="49.75%">
 
 # virtual-wine-tasting 🍷
 
