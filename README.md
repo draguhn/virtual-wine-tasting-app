@@ -29,7 +29,9 @@ Virtual wine tasting is an application that provides a step-by-step instruction 
 6. Create a ".env" file in the server folder. It should contain the following ennvironmental variables: 
 
 PASSWORD=yourPostgresPw
+
 USERNAME=yourPostgresUserName
+
 DATABASE=wineDb
 
 7. In the server folder, run `node index.js`
